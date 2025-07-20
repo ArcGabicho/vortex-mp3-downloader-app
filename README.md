@@ -1,7 +1,7 @@
 # 🎵 Vortex MP3 Downloader - Next.js - Firebase
 
 <p align="center">
-  <img src="https://i.imgur.com/Ev5HUKb.png" alt="YouTube to MP3 Frontend" width="600"/>
+  <img src="https://i.imgur.com/mU8Uxu2.png" alt="YouTube to MP3 Frontend" width="600"/>
 </p>
 
 Aplicación web construida con **Next.js** y **Firebase** que permite convertir videos de YouTube en archivos MP3 utilizando una API backend desarrollada con FastAPI.
