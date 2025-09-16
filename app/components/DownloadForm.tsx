@@ -69,7 +69,7 @@ export default function DownloadForm({ user, onDownloadComplete }: DownloadFormP
     const result = await saveDownload({
       url,
       title,
-      downloadUrl: url, // Guardamos la URL original del video
+      downloadUrl, // <-- usa la URL temporal del blob
       userId: user.uid
     });
 
