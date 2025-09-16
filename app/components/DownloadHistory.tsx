@@ -19,7 +19,10 @@ export default function DownloadHistory({ user, refreshTrigger }: DownloadHistor
   const fetchDownloads = async () => {
     try {
       const result = await getUserDownloads(user.uid);
-      if (result.error) {
+      if (result.error && result.downloads.length === 0) {
+        // No mostrar error si simplemente no hay descargas
+        setDownloads([]);
+      } else if (result.error) {
         toast.error("Error al cargar el historial");
       } else {
         setDownloads(result.downloads);
